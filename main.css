@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/* ALL GENERAL STYLING ENTIRE PAGE */
+body {
+	background-color: #2D2D2D;
+	font-family: 'Raleway', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+a:hover {
+	transition: color 0.3s ease-in;
+	-o-transition:: color 0.3s ease-in;
+	-moz-transition: color 0.3s ease-in;
+	-webkit-transition: color 0.3s ease-in;
+	color: rgba(18, 139, 134, 1) !important;
+}
+
+/* END ALL GENERAL STYLING ENTIRE PAGE */
+
+
+/* ALL GENERAL STYLING FOR LOGIN / REGISTER / FORGOT */
+.container {
+	display: flex;
+	justify-content: center;
+	height: 90vh;
+	align-items: center;
+}
+
+.login {
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #222222;
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.row {
+	padding: 10px;
+}
+
+/* ALL GENERAL STYLING FOR LOGIN / REGISTER / FORGOT */
+
+/* LOGIN STYLING */
+
+.top {
+	text-align: center;
+	height: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.top::after {
+	content: "Login";
+	font-size: 30px;
+	color: #ccc;
+}
+
+.pass {
+	padding-top: 10px;
+	text-align: right;
+	font-size: 17px;
+}
+
+.acc {
+	color: #ccc;
+	font-size: 17px;
+}
+
+/* END LOGIN STYLING */
+
+/* RESET PASSWORD STYLING */
+
+.reset {
+	text-align: center;
+	height: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.reset::after {
+	content: "Reset Password";
+	font-size: 30px;
+	color: #ccc;
+}
+
+.back {
+	color: #ccc;
+	font-size: 17px;
+}
+
+/* END RESET PASSWORD STYLING */
+
+/* REEGISTER ACCOUNT STYLING */
+
+.reg {
+	text-align: center;
+	height: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.reg::after {
+	content: "Register Account";
+	font-size: 30px;
+	color: #ccc;
+}
+
+label {
+	/* for terms of service checkbox */
+	color: #ccc;
+	padding-left: 5px;
+}
+
+/* END REGISTER ACCOUNT STYLING */
+
+/* ALL INPUT STYLING */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	color: #FFFFFF;
+	background-color: #2D2D2D;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #128B86;
+	padding-left: 20px;
+	width: 400px;
+	font-size: 15px;
+}
+
+input[type="submit"] {
+	color: #fff;
+	background-color: #2D2D2D;
+	border-radius: 5px;
+	border: 1px solid #128B86;
+	height: 50px;
+	width: 420px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+	box-shadow: 0px 0px 7px #128B86;
+	border: 1px solid #128B86;
+}
+
+/* END ALL INPUT STYLING */
+
+/* LOGIN, REGISTER, FORGOT PASS FOR MOBILE AND TABLETS */
+@media screen and (max-width: 1100px) {
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		min-height: 75px;
+		min-width: 600px;
+		font-size: 30px;
+	}
+
+	input[type="submit"] {
+		height: 75px;
+		width: 620px;
+		font-size: 30px;
+	}
+
+	.top,
+	.reg,
+	.reset {
+		padding-bottom: 60px;
+	}
+
+	.top::after,
+	.reg::after,
+	.reset::after {
+		font-size: 50px;
+	}
+
+	.pass,
+	label {
+		font-size: 25px;
+	}
+
+	.acc {
+		font-size: 25px;
+	}
+
+	.row {
+		padding: 20px;
+	}
+}
+/* END LOGIN, REGISTER, FORGOT PASS FOR MOBILE AND TABLETS */
